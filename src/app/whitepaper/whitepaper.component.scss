@@ -1,0 +1,75 @@
+/* whitepaper start */
+.whitepaper {
+    display: block;
+    padding: 5vw 0;
+}
+
+.whitepaper .page-banner {
+    background-image: url(../../assets/images/four-elements-banner-light.png);
+    height: calc(100vw - 80vw);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.dark .whitepaper .page-banner {
+    background-image: url(../../assets/images/four-elements-banner-dark.png);
+}
+
+.page-title {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    padding: 20px 0;
+    font-size: 28px;
+    flex-wrap: wrap;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding-bottom: 20px;
+}
+
+.content .title {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--text-color-2) !important;
+}
+
+.content .title-description {
+    font-size: 16px;
+    color: var(--text-color-2) !important;
+}
+
+.content-box {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    justify-content: space-between;
+}
+
+@media (max-width:1024px) {
+    .whitepaper .page-banner {
+        height: calc(100vw - 75vw);
+    }
+
+    .whitepaper-container {
+        display: flex;
+        gap: 30px;
+        flex-direction: column;
+    }
+
+    .content-box {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .whitepaper-container> :nth-child(even) {
+        flex-direction: column-reverse;
+    }
+}
