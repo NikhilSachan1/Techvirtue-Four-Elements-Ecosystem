@@ -24,7 +24,7 @@
                     </li>
                 </ul>
                 <div class="nav-item toggle-container">
-                    <button class="theme-btn dark" (onclick)="setTheme('dark')" title="Dark mode">
+                    <button class="theme-btn dark" (click)="setTheme('dark')" title="Dark mode">
                         <div>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                 stroke="" class="size-6">
@@ -33,7 +33,7 @@
                             </svg>
                         </div>
                     </button>
-                    <button class="theme-btn light" (onclick)="setTheme('light')" title="Light mode">
+                    <button class="theme-btn light" (click)="setTheme('light')" title="Light mode">
                         <div><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                 stroke="currentColor" class="size-6">
                                 <path stroke-linecap="round" stroke-linejoin="round"
@@ -76,7 +76,7 @@
                         <a class="nav-link" href="#">TELEGRAM</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">WHITEPAPER</a>
+                        <a class="nav-link" [routerLink]="'whitepaper'" routerLinkActive="active-sublevel" [routerLinkActiveOptions]="{exact: true}">WHITEPAPER</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">DEXSCREENER</a>
