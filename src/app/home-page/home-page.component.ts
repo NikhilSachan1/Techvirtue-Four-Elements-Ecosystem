@@ -9,4 +9,8 @@ import { HoverTiltDirective } from '../shared/directives/hover-tilt.directive';
 })
 export class HomePageComponent {
 
+  openURLInNewTab(url: string): void {
+    window.open(url, '_blank');
+  }
+
 }
